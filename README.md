@@ -5,6 +5,48 @@ A C#.Net assembly to assist in unit testing
 
 ## A WORK IN PROGRESS!!!
 
+
+##Classes
+* IntegerAssert.cs
+* StringAssert.cs
+
+### IntegerAssert.cs
+#### Members
+* void IsLessThan(Int16, Int16)
+* void IsLessThan(Int32, Int32)
+* void IsLessThan(Int64, Int64)
+
+##### IsLessThan(Int16 value1, Int16 value2)
+Asserts that short integer value1 is less than value2.
+
+##### IsLessThan(Int32 value1, Int32 value2)
+Asserts that the integer value1 is less than value2.
+
+##### IsLessThan(Int64 value1, Int64 value2)
+Asserts that the long integer value1 is less than value2.
+
+
+### StringAssert.cs
+#### Members
+* void IsEmpty(String)
+* void IsEmpty(String, String)
+* void IsEmpty(String, String, params object[])
+
+##### void IsEmpty(String value)
+Asserts that the specified value is empty.
+value:   The value to test
+
+##### void IsEmpty(String value, String message)
+Asserts that the specified value is empty with a message to display if it is not.
+value:   The value to test
+message: A message to display. This message can be seen in the unit test results.
+
+##### void IsEmpty(String value, String message, params object[] parameters)
+Asserts that the specified value is empty with a message to display if it is not.
+value:      The value to test
+message:    A message to display. This message can be seen in the unit test results.
+parameters: An array of parameters to use when formatting
+
 ## Git Commits
 * Name your commits in the following format YYYYMMDD-HHMM-IINN COMMENT
 * Where YYYY    = Year
